@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+	<!-- <style>
+		*{
+			margin: 0;
+			font-family: "Arial";
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+		}
+		#myID{
+			width: 200px;
+			height:100px;
+			background-color: #00f;
+		}
+		.myClassName{
+			background-color: #0f0;
+		}
+		[type="text"]{
+			background-color: #f00;
+		}
+
+		div:hover{
+			background-color: #00f;
+		}
+
+		div:before{
+			content: "before";
+		}
+		div:after{
+			content: "after";
+		}
+		li:last-child{
+			background-color: rgb(255,0,0);
+		}
+		li:first-child{
+			background-color: rgb(0,255,0);
+		}
+		li:nth-child(2){
+			background-color: rgba(0,0,255,0.2);
+		}
+	</style> -->
+	<style>
+		.outer{
+			width: 300vw;
+			height: 300px;
+			background-color: #0f0;
+			/* max-width:500px;
+			min-height:200px:; */
+			color: #f00;
+			font-size: 50pt;
+			font-weight:700;
+			letter-spacing: 5px;
+			line-height: 300px;
+			text-align: center;
+			/* text-decoration:  line-through;
+			text-shadow: 2px 2px 6px #fff; */
+			text-shadow: 0 0 6px #fff;
+
+			background-color: #0f0;
+			background-image:url("images/helpbox-contact.jpg");
+			background-repeat:no-repeat;
+			background-position: center center;
+			background-size: cover;
+
+			border:  5px solid #000;
+			border-radius: 100%;
+
+			box-shadow:0px 0px 20px #000;
+			overflow: hidden;
+			/* overflow-y: scroll;
+			overflow-x: scroll;  */
+		}
+
+
+	</style>	
+</head>
+<body>
+	<div class="myClassName">div</div>
+	<section id="myID" class="myClassName">section</section>
+	<input type="text">
+
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+
+	<div class="outer"></div>
+
+	<section class="outer"></section>
+
+
+<section class="outer"></section>
+
+<span class="my-inline">inline</span>
+
+<div class="animate">div</div>	
+<div class="my-outer">div</div>
+<div class="inner">div</div>
+<div class="inner-2">div</div>
+
+<style>
+		.
+
+
+		.my-outer{
+			width: 300px;
+			height: 300px;
+			background-color: #CEF0B9;
+			position: relative;
+			top:70px;
+			position: static;
+			/* transition: all .5s;
+			top: 0;
+			left:0; 0;*/
+			/* margin: 30px 0 20px;
+			margin-top: 30px;
+			margin-left:30px;
+			margin-right: 30px;
+			margin-bottom: 30pc; */
+			padding:30px 0 20px;
+			/* margin: 30px; */
+			/* margin-top: 30px;
+			margin-left:30px;
+			margin-right: 30px;
+			margin-bottom: 30pc; */
+			
+		}
+		.my-outer:hover{
+			/* top:10px;
+			left: 10px; */
+
+
+		}
+		.inner{
+			width: 50px;
+			hight: 50px;
+			background-color: #f00;
+			/* display: none; */
+			position: absolute;
+			top: -50px;
+			/* bottom: 100px */
+			/* left: 1000px; */
+			right: 0;
+			text-align: center;
+			line-height: 50px
+		}
+		.inner-2{
+			width: 300px;
+			hight: 300px;
+			background-color: #CCC;
+			/* position: absolute; */
+			right: 0;
+
+		}
+		.my-outer:hover .inner{
+			display: block;
+		}
+		.my-inline{
+			width: 100px;
+			height: 100px;
+			background-color: #00f;
+			display: inline-block;
+			/* display: none; */
+			position: fixed;
+			top: 0;
+			left:0;
+		}
+
+		.animate{
+			idth: 200px;
+			height: 200px;
+			background-color: #ccc;
+			transform: translate(0px,0px);
+			transition: all 0.5s;
+			/* animation:leftright 2s linear infinite; */
+        }
+		.animate:hover{
+			/* transform: scale(1.5) rotate(45deg); */
+			/* transform: rotate(45deg); */
+			transform: translate(30px,30px);
+		}
+		@keyframes leftright{
+		    0% {
+		    	transform: translate(0%,0);
+		    }
+		    25% {
+		    	transform: translate(100%,0);
+		    }
+		    75% {
+		    	transform: translate(-100%,0);
+		    }
+		}
+		<style>
+			.my-outer .inner-2{
+				background-color: #001;
+			}
+			.number-list > li{
+				background-color: #f00;
+			}
+			.number-list > li+li{
+				background-color: #0f0;
+			}
+		    .number-list > li~.demo{
+				background-color: #000;
+			}
+		</style>
+		<link rel="stylesheet" href="css/style.css">
+
+</style>
+</head>
+	
+</body>
+</html>

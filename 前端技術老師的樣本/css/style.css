@@ -1,0 +1,18 @@
+li{
+	background-color: #ccc !important;
+}
+.my-outer .inner-2{
+	background-color: #00f;
+}
+.number-list li{
+	background-color: #f00;
+}
+.number-list > li{
+	background-color: #f00;
+}
+ul.number-list li+li{
+	background-color: #0f0;
+}
+ul.number-list li~.demo{
+	background-color: #000;
+}

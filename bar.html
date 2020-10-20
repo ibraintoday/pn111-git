@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>barbar</title>
+	<style>
+		.outer{
+			width: 300px;
+			height: 50px;
+			border-right: 25px;
+			border: :2px solid #000;
+			display: flex;
+			align-items: center
+		}
+		.inner{
+			width: 50px;
+			height:  calc(100% -26px);
+			border-radius:  16px;
+			margin-left:  5px;
+			background-color: #ff0;
+			border:2px solid #000;
+		}
+
+		.outer:before{
+			content: "";
+			display:  block;
+			width: 25%
+			height: 50px;
+			position: absolute;
+			top: 0;
+			left: 75px;
+			background-color:#f00;
+			z-index: -1;
+			border-left: 3px dashed #000 
+			border-right: 3px dashed #000 
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="outer">
+		<div class="inner"></div>
+	</div>
+
+
+
+</body>
+</html>
